@@ -1,0 +1,109 @@
+/*Main colors*/
+/*Fonts*/
+@font-face {
+  font-family: "Philosopher";
+  src: url(../fonts/Philosopher/Philosopher-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url(../fonts/tt-commons-cufonfonts/TT\ Commons\ Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url(../fonts/tt-commons-cufonfonts/TT\ Commons\ Medium.otf);
+  font-weight: 500;
+}
+/*Mixins*/
+/*Reset*/
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+body {
+  background-color: #000000;
+}
+
+.header {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 40px;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 322px;
+}
+.aside__card {
+  background-color: #f51b1b;
+  padding: 40px 24px;
+  color: #ffffff;
+}
+.aside__title {
+  padding-bottom: 40px;
+}
+.aside__header {
+  padding-bottom: 8px;
+  font-family: "Philosopher", Sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
+.aside__paragragh {
+  font-family: "TT Commons", Sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+.aside__foto {
+  max-width: 100%;
+}
+.aside__nav li {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+.aside__nav li a {
+  text-decoration: none;
+  font-family: "TT Commons", Sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
