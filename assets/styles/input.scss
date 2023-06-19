@@ -37,14 +37,24 @@ body {
   @include container;
   display: flex;
   justify-content: flex-end;
+  &__logo {
+    padding-top: 26px;
+    max-width: 239.91px;
+    width: 100%;
+  }
 }
 .main-container {
   @include container;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 31px;
+  padding-bottom: 32px;
 }
 .aside {
   display: flex;
   flex-direction: column;
-  width: 322px;
+  max-width: 322px;
+  width: 100%;
   &__card {
     background-color: $accent;
     padding: 40px 24px;
@@ -92,4 +102,37 @@ body {
   }
 }
 .main {
+  color: $white;
+  width: 100%;
+
+  &__hello {
+    max-width: 690px;
+    padding-bottom: 32px;
+    font-family: "TT Commons", Sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+  }
+  &__resume-container {
+    border: 1px solid $white;
+    width: 100%;
+  }
+  &__resume {
+    padding: 48px 50px 129px 28px;
+  }
+  &__item {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 72px;
+  }
+  &__title {
+    flex-basis: 124px;
+    font-family: "Philosopher", Sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+  }
 }
