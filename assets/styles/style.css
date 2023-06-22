@@ -1,9 +1,10 @@
 /*Main colors*/
 /*Fonts*/
 @font-face {
-  font-family: "Philosopher";
-  src: url(../fonts/Philosopher/Philosopher-Regular.ttf);
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format("woff2");
 }
 @font-face {
   font-family: "TT Commons";
@@ -48,6 +49,7 @@ body {
 .header {
   margin: 0 auto;
   max-width: 1440px;
+  width: 100%;
   padding: 0 40px;
   display: flex;
   justify-content: flex-end;
@@ -57,15 +59,33 @@ body {
   max-width: 239.91px;
   width: 100%;
 }
+@media (max-width: 360px) {
+  .header {
+    margin: 0 auto;
+    max-width: 360px;
+    width: 100%;
+    padding: 0 20px;
+    justify-content: flex-start;
+  }
+}
 
 .main-container {
   margin: 0 auto;
   max-width: 1440px;
+  width: 100%;
   padding: 0 40px;
   display: flex;
   flex-flow: row nowrap;
   gap: 31px;
-  padding-bottom: 32px;
+}
+@media (max-width: 360px) {
+  .main-container {
+    margin: 0 auto;
+    max-width: 360px;
+    width: 100%;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
 }
 
 .aside {
@@ -73,34 +93,70 @@ body {
   flex-direction: column;
   max-width: 322px;
   width: 100%;
+  position: relative;
+}
+@media (max-width: 360px) {
+  .aside {
+    margin: 0 auto;
+    max-width: 360px;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+.aside__glasses {
+  width: 148px;
+  position: absolute;
+  top: 98px;
+  left: 124px;
+}
+@media (max-width: 360px) {
+  .aside__glasses {
+    width: 147px;
+    top: 86px;
+  }
+}
+.aside__foto {
+  max-width: 322px;
+  width: 100%;
+}
+.aside__arrow {
+  max-width: 322px;
+  width: 100%;
+  position: relative;
+  top: -48px;
 }
 .aside__card {
+  border-radius: 24px 24px 0 0;
   background-color: #f51b1b;
-  padding: 40px 24px;
+  padding: 40px 24px 195px 24px;
   color: #ffffff;
+  position: relative;
+  top: -48px;
+}
+@media (max-width: 360px) {
+  .aside__card {
+    padding: 24px 16px 40px 16px;
+  }
 }
 .aside__title {
   padding-bottom: 40px;
 }
 .aside__header {
   padding-bottom: 8px;
-  font-family: "Philosopher", Sans-serif;
+  font-family: "Roboto", Sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: -0.02em;
 }
-.aside__paragragh {
+.aside__paragraph {
   font-family: "TT Commons", Sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.02em;
-}
-.aside__foto {
-  max-width: 100%;
 }
 .aside__nav li {
   display: flex;
@@ -121,9 +177,19 @@ body {
 .main {
   color: #ffffff;
   width: 100%;
+  max-width: 1008px;
+}
+@media (max-width: 360px) {
+  .main {
+    margin: 0 auto;
+    max-width: 360px;
+    width: 100%;
+    padding: 0 20px;
+  }
 }
 .main__hello {
   max-width: 690px;
+  width: 100%;
   padding-bottom: 32px;
   font-family: "TT Commons", Sans-serif;
   font-style: normal;
@@ -132,23 +198,102 @@ body {
   line-height: 24px;
   letter-spacing: -0.01em;
 }
+@media (max-width: 360px) {
+  .main__hello {
+    max-width: 320px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 24px;
+  }
+}
 .main__resume-container {
   border: 1px solid #ffffff;
+  max-width: 1008px;
   width: 100%;
+  position: relative;
+}
+@media (max-width: 360px) {
+  .main__resume-container {
+    max-width: 320px;
+  }
+}
+.main__arrow {
+  max-width: 1008px;
+  width: 100%;
+  position: relative;
+  top: -1px;
 }
 .main__resume {
-  padding: 48px 50px 129px 28px;
+  padding: 28px 50px 109px 28px;
+}
+@media (max-width: 360px) {
+  .main__resume {
+    padding: 21px 15px 30px 15px;
+  }
 }
 .main__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-flow: row wrap;
   gap: 72px;
 }
+@media (max-width: 360px) {
+  .main__item {
+    flex-wrap: wrap;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    gap: 16px;
+  }
+}
 .main__title {
   flex-basis: 124px;
-  font-family: "Philosopher", Sans-serif;
+  font-family: "Roboto", Sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
+}
+.main__article {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (max-width: 360px) {
+  .main__article {
+    gap: 12px;
+  }
+}
+.main__article h3 {
+  font-family: "TT Commons", Sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+@media (max-width: 360px) {
+  .main__article h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.main__article p {
+  font-family: "TT Commons", Sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  opacity: 0.4;
+}
+.main__article_skills {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+@media (max-width: 360px) {
+  .main__article_skills {
+    gap: 16px;
+  }
 }

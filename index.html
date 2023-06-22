@@ -18,11 +18,21 @@
     </header>
     <div class="main-container">
       <aside class="aside">
+        <img
+          src="./assets/images/glasses.png"
+          alt="glasses"
+          class="aside__glasses"
+        />
         <img src="./assets/images/foto.jpg" alt="foto" class="aside__foto" />
+        <img
+          src="./assets/images/arrow.png"
+          alt="red arrow"
+          class="aside__arrow"
+        />
         <div class="aside__card">
           <div class="aside__title">
             <h1 class="aside__header">Дервель Динара</h1>
-            <p class="aside__paragraph">36 лет, Челябинск/Пуэрто-Вальярта</p>
+            <p class="aside__paragraph">36 лет, Пуэрто-Вальярта</p>
           </div>
           <nav class="aside__nav">
             <ul>
@@ -117,20 +127,30 @@
       </aside>
       <main class="main">
         <p class="main__hello">
-          Привет! Я обладаю знаниями в HTML, CSS, JavaScript и фреймворках,
-          таких как React и Angular. Я всегда стараюсь быть в курсе последних
-          технологических тенденций и постоянно улучшать свои навыки. Люблю
-          работать в команде и готов делиться своими знаниями и опытом
-          с коллегами. Я также умею работать с различными инструментами
-          и библиотеками, такими как Bootstrap, jQuery, Sass и другие. Я готов
-          принять любой вызов и настроен на постоянное развитие в своей
+          Привет! Я обладаю знаниями в HTML, CSS, JavaScript и начальными
+          знаниями в фреймворке React. Мне нравится учиться frontend разработке,
+          быть в курсе последних технологических тенденций и постоянно улучшать
+          свои навыки. Люблю работать в команде и готова делиться своими
+          знаниями и опытом с коллегами. Я также умею работать с различными
+          инструментами и библиотеками, такими как Bootstrap, jQuery, Sass. Я
+          готова принять любой вызов и настроена на постоянное развитие в своей
           профессии
         </p>
         <div class="main__resume-container">
+          <img
+            srcset="
+              ./assets/images/arrow2_360px.png  320w,
+              ./assets/images/arrow2.png       1008w
+            "
+            sizes="(max-width: 360px) 320px, 1008px"
+            src="./assets/images/arrow2.png"
+            alt="arrow"
+            class="main__arrow"
+          />
           <div class="main__resume">
             <section class="main__item">
               <h2 class="main__title">Образование</h2>
-              <div>
+              <div class="main__article">
                 <article>
                   <h3>Южно-Уральский государственный университет</h3>
                   <p>Прикладная математика</p>
@@ -148,9 +168,10 @@
                 </article>
               </div>
             </section>
+            <hr />
             <section class="main__item">
               <h2 class="main__title">Карьера</h2>
-              <div>
+              <div class="main__article">
                 <article>
                   <h3>Банк России</h3>
                   <p>Специалист отдела аналитического обеспечения</p>
@@ -163,9 +184,10 @@
                 </article>
               </div>
             </section>
+            <hr />
             <section class="main__item">
               <h2 class="main__title">Навыки</h2>
-              <div class="main__skills">
+              <div class="main__article main__article_skills">
                 <h3>HTML</h3>
                 <h3>CSS</h3>
                 <h3>JavaScript</h3>
