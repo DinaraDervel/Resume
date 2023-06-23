@@ -67,6 +67,10 @@ body {
     padding: 0 20px;
     justify-content: flex-start;
   }
+  .header__logo {
+    padding-top: 20px;
+    padding-bottom: 48px;
+  }
 }
 
 .main-container {
@@ -97,10 +101,7 @@ body {
 }
 @media (max-width: 360px) {
   .aside {
-    margin: 0 auto;
-    max-width: 360px;
-    width: 100%;
-    padding: 0 20px;
+    max-width: 320px;
   }
 }
 .aside__glasses {
@@ -109,10 +110,15 @@ body {
   top: 98px;
   left: 124px;
 }
+@media (max-width: 1439px) and (min-width: 361px) {
+  .aside__glasses {
+    display: none;
+  }
+}
 @media (max-width: 360px) {
   .aside__glasses {
     width: 147px;
-    top: 86px;
+    top: 90px;
   }
 }
 .aside__foto {
@@ -181,10 +187,7 @@ body {
 }
 @media (max-width: 360px) {
   .main {
-    margin: 0 auto;
-    max-width: 360px;
-    width: 100%;
-    padding: 0 20px;
+    max-width: 320px;
   }
 }
 .main__hello {
@@ -223,12 +226,17 @@ body {
   position: relative;
   top: -1px;
 }
+@media (max-width: 360px) {
+  .main__arrow {
+    max-width: 320px;
+  }
+}
 .main__resume {
   padding: 28px 50px 109px 28px;
 }
 @media (max-width: 360px) {
   .main__resume {
-    padding: 21px 15px 30px 15px;
+    padding: 9px 15px 30px 15px;
   }
 }
 .main__item {
@@ -236,18 +244,17 @@ body {
   padding-bottom: 20px;
   display: flex;
   flex-flow: row wrap;
-  gap: 72px;
+  gap: 16px;
 }
 @media (max-width: 360px) {
   .main__item {
     flex-wrap: wrap;
     padding-top: 12px;
     padding-bottom: 12px;
-    gap: 16px;
   }
 }
 .main__title {
-  flex-basis: 124px;
+  flex-basis: 180px;
   font-family: "Roboto", Sans-serif;
   font-style: normal;
   font-weight: 400;

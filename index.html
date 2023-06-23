@@ -137,16 +137,17 @@
           профессии
         </p>
         <div class="main__resume-container">
-          <img
-            srcset="
-              ./assets/images/arrow2_360px.png  320w,
-              ./assets/images/arrow2.png       1008w
-            "
-            sizes="(max-width: 360px) 320px, 1008px"
-            src="./assets/images/arrow2.png"
-            alt="arrow"
-            class="main__arrow"
-          />
+          <picture class="main__arrow">
+            <source
+              media="(max-width: 360px)"
+              srcset="./assets/images/arrow2_360px.png"
+            />
+            <source
+              media="(min-width: 360px)"
+              srcset="./assets/images/arrow2.png"
+            />
+            <img src="./assets/images/arrow2.png" alt="arrow" />
+          </picture>
           <div class="main__resume">
             <section class="main__item">
               <h2 class="main__title">Образование</h2>
